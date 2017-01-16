@@ -10,4 +10,7 @@
 
 @interface CycleScrollCell : UICollectionViewCell
 
+@property(nonatomic, weak)UIImageView *imageView;
+@property(nonatomic, strong)UILabel *titleLabel;
+@property(nonatomic, assign)BOOL onlyShowText;
 @end

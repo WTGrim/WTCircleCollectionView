@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		165C2138EC32DCAE9A73AD25 /* libPods-CycleScrollView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E70F0878EDC703A7E2DD4182 /* libPods-CycleScrollView.a */; };
 		5D7196401DEC31F200FCFCE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D71963F1DEC31F200FCFCE1 /* main.m */; };
 		5D7196431DEC31F200FCFCE1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7196421DEC31F200FCFCE1 /* AppDelegate.m */; };
 		5D7196461DEC31F200FCFCE1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7196451DEC31F200FCFCE1 /* ViewController.m */; };
@@ -15,6 +16,11 @@
 		5D71964E1DEC31F200FCFCE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D71964C1DEC31F200FCFCE1 /* LaunchScreen.storyboard */; };
 		5D7196591DEC31F200FCFCE1 /* CycleScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7196581DEC31F200FCFCE1 /* CycleScrollViewTests.m */; };
 		5D7196641DEC31F200FCFCE1 /* CycleScrollViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7196631DEC31F200FCFCE1 /* CycleScrollViewUITests.m */; };
+		5D89C5FF1DED28CC006B1C0A /* WTCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D89C5FE1DED28CC006B1C0A /* WTCycleScrollView.m */; };
+		5D89C6071DED7837006B1C0A /* UIView+FrameExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D89C6061DED7837006B1C0A /* UIView+FrameExtension.m */; };
+		5D8ABA8E1DEFF11900D2F2DD /* 123.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D8ABA8D1DEFF11900D2F2DD /* 123.jpg */; };
+		5D94F34B1DEEB21D004D28E9 /* CycleScrollCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D94F34A1DEEB21D004D28E9 /* CycleScrollCell.m */; };
+		5D980E3B1E2CBF0100E52F00 /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D980E3A1E2CBF0100E52F00 /* back.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27F0855827020524A3641EAF /* Pods-CycleScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CycleScrollView.release.xcconfig"; path = "Pods/Target Support Files/Pods-CycleScrollView/Pods-CycleScrollView.release.xcconfig"; sourceTree = "<group>"; };
 		5D71963B1DEC31F200FCFCE1 /* CycleScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CycleScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D71963F1DEC31F200FCFCE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5D7196411DEC31F200FCFCE1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +58,16 @@
 		5D71965F1DEC31F200FCFCE1 /* CycleScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CycleScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D7196631DEC31F200FCFCE1 /* CycleScrollViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CycleScrollViewUITests.m; sourceTree = "<group>"; };
 		5D7196651DEC31F200FCFCE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D89C5FD1DED28CC006B1C0A /* WTCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTCycleScrollView.h; sourceTree = "<group>"; };
+		5D89C5FE1DED28CC006B1C0A /* WTCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTCycleScrollView.m; sourceTree = "<group>"; };
+		5D89C6051DED7837006B1C0A /* UIView+FrameExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameExtension.h"; sourceTree = "<group>"; };
+		5D89C6061DED7837006B1C0A /* UIView+FrameExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FrameExtension.m"; sourceTree = "<group>"; };
+		5D8ABA8D1DEFF11900D2F2DD /* 123.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 123.jpg; sourceTree = "<group>"; };
+		5D94F3491DEEB21D004D28E9 /* CycleScrollCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleScrollCell.h; sourceTree = "<group>"; };
+		5D94F34A1DEEB21D004D28E9 /* CycleScrollCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleScrollCell.m; sourceTree = "<group>"; };
+		5D980E3A1E2CBF0100E52F00 /* back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back.jpg; sourceTree = "<group>"; };
+		C22D37667A1CC3ADC786D4D8 /* Pods-CycleScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CycleScrollView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CycleScrollView/Pods-CycleScrollView.debug.xcconfig"; sourceTree = "<group>"; };
+		E70F0878EDC703A7E2DD4182 /* libPods-CycleScrollView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CycleScrollView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				165C2138EC32DCAE9A73AD25 /* libPods-CycleScrollView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +96,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1287721114E97E052D17D2D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C22D37667A1CC3ADC786D4D8 /* Pods-CycleScrollView.debug.xcconfig */,
+				27F0855827020524A3641EAF /* Pods-CycleScrollView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		433458C9C3D85F017F0D3E32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E70F0878EDC703A7E2DD4182 /* libPods-CycleScrollView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5D7196321DEC31F200FCFCE1 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +120,8 @@
 				5D7196571DEC31F200FCFCE1 /* CycleScrollViewTests */,
 				5D7196621DEC31F200FCFCE1 /* CycleScrollViewUITests */,
 				5D71963C1DEC31F200FCFCE1 /* Products */,
+				1287721114E97E052D17D2D9 /* Pods */,
+				433458C9C3D85F017F0D3E32 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +138,7 @@
 		5D71963D1DEC31F200FCFCE1 /* CycleScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				5D89C5FC1DED286C006B1C0A /* CycleScrollView */,
 				5D7196411DEC31F200FCFCE1 /* AppDelegate.h */,
 				5D7196421DEC31F200FCFCE1 /* AppDelegate.m */,
 				5D7196441DEC31F200FCFCE1 /* ViewController.h */,
@@ -110,6 +148,8 @@
 				5D71964C1DEC31F200FCFCE1 /* LaunchScreen.storyboard */,
 				5D71964F1DEC31F200FCFCE1 /* Info.plist */,
 				5D71963E1DEC31F200FCFCE1 /* Supporting Files */,
+				5D89C6051DED7837006B1C0A /* UIView+FrameExtension.h */,
+				5D89C6061DED7837006B1C0A /* UIView+FrameExtension.m */,
 			);
 			path = CycleScrollView;
 			sourceTree = "<group>";
@@ -140,6 +180,19 @@
 			path = CycleScrollViewUITests;
 			sourceTree = "<group>";
 		};
+		5D89C5FC1DED286C006B1C0A /* CycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				5D980E3A1E2CBF0100E52F00 /* back.jpg */,
+				5D8ABA8D1DEFF11900D2F2DD /* 123.jpg */,
+				5D89C5FD1DED28CC006B1C0A /* WTCycleScrollView.h */,
+				5D89C5FE1DED28CC006B1C0A /* WTCycleScrollView.m */,
+				5D94F3491DEEB21D004D28E9 /* CycleScrollCell.h */,
+				5D94F34A1DEEB21D004D28E9 /* CycleScrollCell.m */,
+			);
+			name = CycleScrollView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +200,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D7196681DEC31F200FCFCE1 /* Build configuration list for PBXNativeTarget "CycleScrollView" */;
 			buildPhases = (
+				6A12BA22A08100533B7A4ACD /* [CP] Check Pods Manifest.lock */,
 				5D7196371DEC31F200FCFCE1 /* Sources */,
 				5D7196381DEC31F200FCFCE1 /* Frameworks */,
 				5D7196391DEC31F200FCFCE1 /* Resources */,
+				467C6378FFE482150367C278 /* [CP] Embed Pods Frameworks */,
+				B7AC76BA6B2BAE68A87244CD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +263,7 @@
 				TargetAttributes = {
 					5D71963A1DEC31F200FCFCE1 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 624TUL8XMA;
 						ProvisioningStyle = Automatic;
 					};
 					5D7196531DEC31F200FCFCE1 = {
@@ -246,6 +303,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D8ABA8E1DEFF11900D2F2DD /* 123.jpg in Resources */,
+				5D980E3B1E2CBF0100E52F00 /* back.jpg in Resources */,
 				5D71964E1DEC31F200FCFCE1 /* LaunchScreen.storyboard in Resources */,
 				5D71964B1DEC31F200FCFCE1 /* Assets.xcassets in Resources */,
 				5D7196491DEC31F200FCFCE1 /* Main.storyboard in Resources */,
@@ -268,6 +327,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		467C6378FFE482150367C278 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CycleScrollView/Pods-CycleScrollView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A12BA22A08100533B7A4ACD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B7AC76BA6B2BAE68A87244CD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CycleScrollView/Pods-CycleScrollView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5D7196371DEC31F200FCFCE1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -276,6 +383,9 @@
 				5D7196461DEC31F200FCFCE1 /* ViewController.m in Sources */,
 				5D7196431DEC31F200FCFCE1 /* AppDelegate.m in Sources */,
 				5D7196401DEC31F200FCFCE1 /* main.m in Sources */,
+				5D94F34B1DEEB21D004D28E9 /* CycleScrollCell.m in Sources */,
+				5D89C6071DED7837006B1C0A /* UIView+FrameExtension.m in Sources */,
+				5D89C5FF1DED28CC006B1C0A /* WTCycleScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,22 +530,28 @@
 		};
 		5D7196691DEC31F200FCFCE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C22D37667A1CC3ADC786D4D8 /* Pods-CycleScrollView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 624TUL8XMA;
 				INFOPLIST_FILE = CycleScrollView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Dwt.CycleScrollView;
+				PRODUCT_BUNDLE_IDENTIFIER = Dwt.CycleScrollView.11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		5D71966A1DEC31F200FCFCE1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27F0855827020524A3641EAF /* Pods-CycleScrollView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 624TUL8XMA;
 				INFOPLIST_FILE = CycleScrollView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Dwt.CycleScrollView;
+				PRODUCT_BUNDLE_IDENTIFIER = Dwt.CycleScrollView.11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -505,6 +621,7 @@
 				5D71966A1DEC31F200FCFCE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5D71966B1DEC31F200FCFCE1 /* Build configuration list for PBXNativeTarget "CycleScrollViewTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +630,7 @@
 				5D71966D1DEC31F200FCFCE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5D71966E1DEC31F200FCFCE1 /* Build configuration list for PBXNativeTarget "CycleScrollViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +639,7 @@
 				5D7196701DEC31F200FCFCE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
