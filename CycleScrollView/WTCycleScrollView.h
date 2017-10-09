@@ -40,7 +40,11 @@ typedef enum : NSUInteger {
 @property(nonatomic, assign)UICollectionViewScrollDirection scrollDirection;
 @property(nonatomic, assign)PageControlAliment pageControlAliment;
 @property(nonatomic, assign)BOOL showPageControl;
-
 //文字广告
 @property(nonatomic, assign)BOOL onlyShowText;
+
+//如果需要做类似腾讯视频间距轮播(设置下面两个属性即可)
+@property(nonatomic, assign)CGFloat margin;
+@property(nonatomic, assign)CGFloat cellWidth;
+
 @end

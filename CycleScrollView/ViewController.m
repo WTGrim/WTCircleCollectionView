@@ -43,6 +43,8 @@
     cycleScrollView.pageControlAliment = PageControlAlimentRight;
     cycleScrollView.showPageControl = YES;
     cycleScrollView.timeInterVal = 3.5;
+    cycleScrollView.cellWidth = [UIScreen mainScreen].bounds.size.width - 40;
+    cycleScrollView.margin = 5;
     cycleScrollView.titlesArray = titles;
     cycleScrollView.imageUrlsArray = imagesURLStrings;
     [self.view addSubview:cycleScrollView];
