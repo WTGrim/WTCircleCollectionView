@@ -61,7 +61,7 @@ static NSString *const cellID = @"cellID";
     [collectionView registerClass:[CycleScrollCell class] forCellWithReuseIdentifier:cellID];
     collectionView.showsVerticalScrollIndicator = NO;
     collectionView.showsHorizontalScrollIndicator = NO;
-//    collectionView.pagingEnabled = YES;
+    collectionView.pagingEnabled = YES;
     collectionView.delegate = self;
     collectionView.dataSource = self;
     collectionView.scrollsToTop = NO;
@@ -114,10 +114,6 @@ static NSString *const cellID = @"cellID";
 
 - (void)setCellWidth:(CGFloat)cellWidth{
     _cellWidth = cellWidth;
-}
-
-- (CGFloat)getSpace{
-    return ([UIScreen mainScreen].bounds.size.width - self.cellWidth) / 2.0;
 }
 
 - (void)setImagePathsArray:(NSArray *)imagePathsArray{
@@ -209,12 +205,13 @@ static NSString *const cellID = @"cellID";
         if (_loop) {
             index = _totalItemCount * 0.5;
             [_collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:index inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
-            [_collectionView setContentOffset:CGPointMake(_collectionView.contentOffset.x - [self getSpace], _collectionView.contentOffset.y) animated:NO];
+//            [_collectionView setContentOffset:CGPointMake(_collectionView.contentOffset.x - [self getSpace], _collectionView.contentOffset.y) animated:NO];
         }
         return;
     }
 
-    [_collectionView setContentOffset:CGPointMake(_collectionView.contentOffset.x + self.cellWidth + self.margin, _collectionView.contentOffset.y) animated:YES];
+    [_collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:index inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:YES];
+//    [_collectionView setContentOffset:CGPointMake(_collectionView.contentOffset.x + self.cellWidth + self.margin, _collectionView.contentOffset.y) animated:YES];
 }
 
 - (void)initTimer{
@@ -253,7 +250,6 @@ static NSString *const cellID = @"cellID";
             index = 0;
         }
         [_collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:index inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
-        [_collectionView setContentOffset:CGPointMake(_collectionView.contentOffset.x + [self getSpace], _collectionView.contentOffset.y) animated:NO];
     }
     self.pageControl.frame = CGRectZero;
     self.pageControl.userInteractionEnabled = NO;
@@ -350,18 +346,11 @@ static NSString *const cellID = @"cellID";
 
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView{
     if (!self.imagePathsArray.count)return;
-//    int index = [self getCurrentIndex];
-//    int pageControlIndex = [self pageControlIndexWithIndex:index];
-//    if ([_delegate respondsToSelector:@selector(cycleScrollView:didSelectItemAtIndex:)]) {
-//        [_delegate cycleScrollView:self didSelectItemAtIndex:pageControlIndex];
-//    }
-//    if (_didSelectItemAtIndexBlock) {
-//        _didSelectItemAtIndexBlock(pageControlIndex);
-//    }
 }
 
+/**腾讯视频效果相关代理
 - (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset{
-    
+
     CGFloat currentOffsetX = scrollView.contentOffset.x;
     CGFloat distance = currentOffsetX - _oldContentOffsetX;
     NSInteger movePage = distance / (self.cellWidth / 2.0);
@@ -372,7 +361,7 @@ static NSString *const cellID = @"cellID";
     }else{
         _dragDirection = 0;
     }
-    
+
     if (movePage != 0) {
         [_collectionView setContentOffset:CGPointMake([self nextContentOffsetX:movePage] + _oldContentOffsetX, scrollView.contentOffset.y) animated:YES];
     }else{
@@ -381,7 +370,7 @@ static NSString *const cellID = @"cellID";
 }
 
 - (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView{
-    
+
     CGFloat width = _dragDirection * [self nextContentOffsetX:1];
     [UIView animateWithDuration:0.2f animations:^{
         [_collectionView setContentOffset:CGPointMake(width + _oldContentOffsetX, scrollView.contentOffset.y) animated:YES];
@@ -389,12 +378,17 @@ static NSString *const cellID = @"cellID";
 }
 
 - (CGFloat)nextContentOffsetX:(NSInteger)movePage{
-    
+
     NSInteger i ;
     if (movePage >= 0) i = 1;
     else i = -1;
     return i * (i * movePage + 1) / 2 * self.cellWidth + i * self.margin;
 }
+ 
+- (CGFloat)getSpace{
+     return ([UIScreen mainScreen].bounds.size.width - self.cellWidth) / 2.0;
+}
+*/
 
 
 
